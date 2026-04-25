@@ -105,16 +105,16 @@ async function submitBooking(e) {
     const data = await response.json();
 
     if (data.success === 'true' || data.success === true || response.ok) {
-      success.textContent = '✦ Locked in. We\'ll text you to confirm your time. See you in the chair.';
+      success.textContent = '✦ Locked in. I\'ll text you to confirm your time. See you in the chair.';
       success.style.display = 'block';
       form.reset();
     } else {
-      success.textContent = '✦ Something went wrong. Call or text us directly to book.';
+      success.textContent = '✦ Something went wrong. Text or DM me directly to book.';
       success.style.background = 'var(--gold-dim)';
       success.style.display = 'block';
     }
   } catch (err) {
-    success.textContent = '✦ Something went wrong. Call or text us directly to book.';
+    success.textContent = '✦ Something went wrong. Text or DM me directly to book.';
     success.style.background = 'var(--gold-dim)';
     success.style.display = 'block';
   }
