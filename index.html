@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fade Room | Premium Barber Experience — Book Your Cut</title>
+  <meta name="description" content="The Fade Room — Premium barbershop experience. Skin fades, beard grooming, hot towel shaves & more. Book your appointment and experience the sharpest cuts in town.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">THE FADE <span>ROOM</span></a>
+      <ul class="nav-links">
+        <li><a href="#menu">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#booking" class="nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Close">✕</button>
+    <a href="#menu" onclick="closeMobile()">SERVICES</a>
+    <a href="#gallery" onclick="closeMobile()">GALLERY</a>
+    <a href="#reviews" onclick="closeMobile()">REVIEWS</a>
+    <a href="#about" onclick="closeMobile()">ABOUT</a>
+    <a href="#booking" onclick="closeMobile()">BOOK NOW</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content" style="animation:fadeUp 1s ease-out">
+        <div class="hero-line"></div>
+        <div class="hero-tag">Premium Barbershop Experience</div>
+        <h1>SHARP CUTS.<br><span>CLEAN FADES.</span></h1>
+        <p class="hero-desc">Where precision meets style. Walk-ins welcome, but appointments guarantee your spot. Experience the difference a skilled barber makes.</p>
+        <div class="hero-btns">
+          <a href="#booking" class="btn-gold">BOOK YOUR CUT →</a>
+          <a href="#menu" class="btn-dark">VIEW PRICES</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num" data-count="5.0">0</div><div class="label">Star Rating</div></div>
+          <div class="stat"><div class="num" data-count="500">0</div><div class="label">Happy Clients</div></div>
+          <div class="stat"><div class="num" data-count="8">0</div><div class="label">Years Cutting</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <div class="line"></div>
+    <div class="icon">✂</div>
+    <div class="line"></div>
+  </div>
+
+  <!-- SERVICE MENU -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">— Services & Pricing —</div>
+        <h2 class="section-title">THE MENU</h2>
+        <p class="section-sub">Premium cuts, sharp lineups, and grooming services done right. Every time.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="menu-grid">
+        <!-- HAIRCUTS -->
+        <div class="menu-card reveal">
+          <h3><span class="icon">✂️</span> HAIRCUTS</h3>
+          <div class="menu-item"><div><div class="name">Classic Haircut</div><div class="time">30 min</div></div><div class="price">$35</div></div>
+          <div class="menu-item"><div><div class="name">Skin Fade</div><div class="time">40 min</div></div><div class="price">$40</div></div>
+          <div class="menu-item"><div><div class="name">Taper Fade</div><div class="time">35 min</div></div><div class="price">$40</div></div>
+          <div class="menu-item"><div><div class="name">Buzz Cut</div><div class="time">20 min</div></div><div class="price">$25</div></div>
+          <div class="menu-item"><div><div class="name">Kids Cut (12 & under)</div><div class="time">25 min</div></div><div class="price">$25</div></div>
+          <div class="menu-item"><div><div class="name">Senior Cut (65+)</div><div class="time">30 min</div></div><div class="price">$30</div></div>
+        </div>
+        <!-- BEARD & GROOMING -->
+        <div class="menu-card reveal">
+          <h3><span class="icon">🪒</span> BEARD & GROOMING</h3>
+          <div class="menu-item"><div><div class="name">Beard Trim & Shape</div><div class="time">20 min</div></div><div class="price">$20</div></div>
+          <div class="menu-item"><div><div class="name">Beard Lineup</div><div class="time">15 min</div></div><div class="price">$15</div></div>
+          <div class="menu-item"><div><div class="name">Hot Towel Shave</div><div class="time">30 min</div></div><div class="price">$35</div></div>
+          <div class="menu-item"><div><div class="name">Haircut + Beard Combo</div><div class="time">50 min</div></div><div class="price">$55</div></div>
+          <div class="menu-item"><div><div class="name">Eyebrow Cleanup</div><div class="time">10 min</div></div><div class="price">$10</div></div>
+          <div class="menu-item"><div><div class="name">Line Up Only</div><div class="time">15 min</div></div><div class="price">$15</div></div>
+        </div>
+        <!-- PREMIUM -->
+        <div class="menu-card reveal">
+          <h3><span class="icon">👑</span> PREMIUM SERVICES</h3>
+          <div class="menu-item"><div><div class="name">The Full Experience</div><div class="time">60 min — cut, beard, hot towel, styling</div></div><div class="price">$75</div></div>
+          <div class="menu-item"><div><div class="name">Hair Design / Part</div><div class="time">15 min add-on</div></div><div class="price">$15+</div></div>
+          <div class="menu-item"><div><div class="name">Hair Color / Dye</div><div class="time">45 min</div></div><div class="price">$50+</div></div>
+          <div class="menu-item"><div><div class="name">Scalp Treatment</div><div class="time">20 min</div></div><div class="price">$25</div></div>
+        </div>
+        <!-- PACKAGES -->
+        <div class="menu-card reveal">
+          <h3><span class="icon">📋</span> PACKAGES & MEMBERSHIPS</h3>
+          <div class="menu-item"><div><div class="name">Monthly Membership</div><div class="time">2 cuts + 1 beard trim per month</div></div><div class="price">$80/mo</div></div>
+          <div class="menu-item"><div><div class="name">5-Pack Haircuts</div><div class="time">Save $25 — prepaid bundle</div></div><div class="price">$150</div></div>
+          <div class="menu-item"><div><div class="name">Wedding / Event Package</div><div class="time">Groom + groomsmen group rate</div></div><div class="price">Custom</div></div>
+          <div class="menu-item"><div><div class="name">First-Time Client</div><div class="time">Any haircut — first visit discount</div></div><div class="price">$30</div></div>
+        </div>
+      </div>
+      <p class="menu-note reveal">Walk-ins welcome. Appointments always recommended for guaranteed service.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">— The Work —</div>
+        <h2 class="section-title">RECENT CUTS</h2>
+        <p class="section-sub">Every fade tells a story. Here's some of our latest work.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/hero.png" alt="Barber cutting hair">
+          <div class="overlay">The Craft</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/result.png" alt="Fresh skin fade">
+          <div class="overlay">Skin Fade</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/tools.png" alt="Barber tools">
+          <div class="overlay">Premium Tools</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/shop.png" alt="Barbershop interior">
+          <div class="overlay">The Shop</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">— Testimonials —</div>
+        <h2 class="section-title">CLIENT REVIEWS</h2>
+        <p class="section-sub">Don't take our word for it — hear from the guys who keep coming back.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Best barber I've ever been to. My fade was absolutely flawless — crisp lines, perfect gradient. I've tried at least 10 barbers and this is the one. Never going anywhere else."</p>
+          <div class="review-author"><div class="review-avatar">D</div><div><div class="review-name">Dre M.</div><div class="review-date">1 week ago</div></div></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Clean shop, great vibes, and the man can cut. Got the full experience — haircut, beard trim, hot towel. Walked out feeling like a million bucks. 10/10 every single time."</p>
+          <div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">Jay R.</div><div class="review-date">2 weeks ago</div></div></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Been coming here for 3 years straight. Consistent quality, always on time, and the prices are fair. My barber actually listens to what I want. That's rare. Don't sleep on this spot."</p>
+          <div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Marcus T.</div><div class="review-date">3 weeks ago</div></div></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Brought my son for his first real haircut and they were so patient with him. Made it a great experience. The cut came out perfect — he looked fresh for school pictures. We'll be regulars!"</p>
+          <div class="review-author"><div class="review-avatar">C</div><div><div class="review-name">Chris K.</div><div class="review-date">1 month ago</div></div></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The hot towel shave was unreal. So relaxing and my face felt incredible after. The lineup was surgical — straight razor precision. This is a premium experience at regular prices."</p>
+          <div class="review-author"><div class="review-avatar">A</div><div><div class="review-name">Andre L.</div><div class="review-date">1 month ago</div></div></div>
+        </div>
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Found my barber for life. Walked in as a new client, got the $30 first-time deal, and my taper fade was the cleanest I've had in years. Already signed up for the monthly membership."</p>
+          <div class="review-author"><div class="review-avatar">K</div><div><div class="review-name">Kevin W.</div><div class="review-date">2 months ago</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img reveal"><img src="images/shop.png" alt="The Fade Room interior"></div>
+        <div class="about-text reveal">
+          <div class="section-tag">— About —</div>
+          <h2>MORE THAN JUST A HAIRCUT</h2>
+          <p>The Fade Room isn't just a barbershop — it's an experience. We believe every man deserves to look and feel his best. That's why we combine old-school barbering traditions with modern techniques to deliver cuts that are sharp, clean, and tailored to you.</p>
+          <p>Whether you're coming in for a quick lineup before a date or the full experience with a hot towel shave, you'll leave looking and feeling like the best version of yourself.</p>
+          <ul class="about-list">
+            <li><span class="ck">✦</span> Licensed & experienced barbers</li>
+            <li><span class="ck">✦</span> Clean, sanitized equipment</li>
+            <li><span class="ck">✦</span> Walk-ins welcome</li>
+            <li><span class="ck">✦</span> Premium grooming products</li>
+            <li><span class="ck">✦</span> Relaxed, no-rush atmosphere</li>
+            <li><span class="ck">✦</span> On-time appointments</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">— Book Now —</div>
+        <h2 class="section-title">SCHEDULE YOUR CUT</h2>
+        <p class="section-sub">Lock in your spot. Fill out the form and we'll confirm your appointment.</p>
+        <div class="gold-line"></div>
+      </div>
+      <div class="booking-grid">
+        <form class="booking-form reveal" id="bookingForm" onsubmit="submitBooking(event)">
+          <input type="hidden" name="_subject" value="New Appointment — The Fade Room">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div class="form-row">
+            <div class="form-group"><label for="bookName">Full Name</label><input type="text" id="bookName" name="Name" placeholder="Your name" required></div>
+            <div class="form-group"><label for="bookPhone">Phone Number</label><input type="tel" id="bookPhone" name="Phone" placeholder="(xxx) xxx-xxxx" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bookService">Service</label>
+              <select id="bookService" name="Service" required>
+                <option value="">Select a service...</option>
+                <optgroup label="Haircuts">
+                  <option>Classic Haircut — $35</option>
+                  <option>Skin Fade — $40</option>
+                  <option>Taper Fade — $40</option>
+                  <option>Buzz Cut — $25</option>
+                  <option>Kids Cut — $25</option>
+                </optgroup>
+                <optgroup label="Beard & Grooming">
+                  <option>Beard Trim & Shape — $20</option>
+                  <option>Hot Towel Shave — $35</option>
+                  <option>Haircut + Beard Combo — $55</option>
+                  <option>Line Up Only — $15</option>
+                </optgroup>
+                <optgroup label="Premium">
+                  <option>The Full Experience — $75</option>
+                  <option>Hair Color / Dye — $50+</option>
+                  <option>Hair Design / Part — $15+</option>
+                </optgroup>
+                <optgroup label="Packages">
+                  <option>Monthly Membership — $80/mo</option>
+                  <option>First-Time Client — $30</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-group"><label for="bookBarber">Preferred Barber</label>
+              <select id="bookBarber" name="Barber">
+                <option value="">No preference</option>
+                <option>Any Available</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="bookDate">Preferred Date</label><input type="date" id="bookDate" name="Preferred Date" required></div>
+            <div class="form-group"><label for="bookTime">Preferred Time</label>
+              <select id="bookTime" name="Preferred Time">
+                <option value="">Select a time...</option>
+                <option>9:00 AM</option>
+                <option>9:30 AM</option>
+                <option>10:00 AM</option>
+                <option>10:30 AM</option>
+                <option>11:00 AM</option>
+                <option>11:30 AM</option>
+                <option>12:00 PM</option>
+                <option>12:30 PM</option>
+                <option>1:00 PM</option>
+                <option>1:30 PM</option>
+                <option>2:00 PM</option>
+                <option>2:30 PM</option>
+                <option>3:00 PM</option>
+                <option>3:30 PM</option>
+                <option>4:00 PM</option>
+                <option>4:30 PM</option>
+                <option>5:00 PM</option>
+                <option>5:30 PM</option>
+                <option>6:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom:14px">
+            <label for="bookNotes">Notes</label>
+            <textarea id="bookNotes" name="Notes" placeholder="Anything we should know? Reference photos, style preferences, etc."></textarea>
+          </div>
+          <button type="submit" class="btn-gold" id="submitBtn" style="width:100%;justify-content:center">BOOK APPOINTMENT →</button>
+          <div class="booking-success" id="bookingSuccess">✦ Locked in. We'll text you to confirm your time. See you in the chair.</div>
+        </form>
+        <div class="booking-info reveal">
+          <div class="info-card"><div class="icon">📍</div><div><h4>The Shop</h4><p>Location sent after booking</p></div></div>
+          <div class="info-card"><div class="icon">📞</div><div><h4>Call / Text</h4><p><a href="#">(xxx) xxx-xxxx</a></p></div></div>
+          <div class="info-card"><div class="icon">📱</div><div><h4>Instagram</h4><p><a href="#">@thefaderoom</a></p></div></div>
+          <div class="info-card"><div class="icon">⏰</div><div><h4>Hours</h4><p>Tues–Fri: 9 AM – 7 PM<br>Sat: 9 AM – 5 PM<br>Sun–Mon: Closed</p></div></div>
+          <div class="info-card"><div class="icon">💳</div><div><h4>Payment</h4><p>Cash, Card, Zelle, CashApp</p></div></div>
+          <div class="info-card"><div class="icon">🚶</div><div><h4>Walk-Ins</h4><p>Welcome — subject to availability</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">THE FADE <span>ROOM</span></div>
+          <p>Premium barbershop experience. Sharp cuts, clean fades, and grooming services for the modern man. Walk-ins welcome, appointments recommended.</p>
+        </div>
+        <div class="footer-col"><h4>SERVICES</h4><ul>
+          <li><a href="#menu">Skin Fade</a></li>
+          <li><a href="#menu">Taper Fade</a></li>
+          <li><a href="#menu">Beard Trim</a></li>
+          <li><a href="#menu">Hot Towel Shave</a></li>
+          <li><a href="#menu">The Full Experience</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>LINKS</h4><ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">© 2026 The Fade Room. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close">✕</button>
+    <img id="lightboxImg" alt="Gallery preview">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
